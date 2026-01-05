@@ -6,6 +6,8 @@ services:
      ports:
         - "10999-11000:10999-11000/udp"
         - "12346-12347:12346-12347/udp"
+        - "8766-8767:8766-8767/udp"
      volumes:
         - ~/.klei/DoNotStarveTogether:/data
+        - ./dst_server:/opt/dst_server
      stop_grace_period: 6m
